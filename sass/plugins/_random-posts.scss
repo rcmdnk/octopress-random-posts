@@ -1,0 +1,15 @@
+.link_btn {
+  background-color: $nav-bg;
+  padding: 1px 5px 0px;
+  position: relative;
+  text-decoration: none;
+  border: solid 2px darken($nav-bg, 15);
+  border-radius: 10px;
+  &:active {
+    padding: 0px 5px 1px;
+    top: 1px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

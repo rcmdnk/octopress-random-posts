@@ -1,0 +1,19 @@
+# Asides
+default_asides:
+  - ...
+  - ...
+  - custom/asides/random_posts.html
+  - ...
+  - ...
+
+# Random posts
+random_posts: 5
+random_local: false
+#random_url: '/posts_light.html'
+
+# jekyll-var
+jekyll_var:
+  include:
+    - random_posts
+    - random_local
+    - random_url

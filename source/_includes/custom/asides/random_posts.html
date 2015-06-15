@@ -1,0 +1,30 @@
+<section>
+  <h1 id="random-link">Random Posts</h1>
+{% if site.random_local  %}
+  <ul class="posts">
+    {% for post in page.random_posts %}
+    <li class="post index_click_box">
+      {% include post_list.html%}
+    </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <span id="random-shuffle" class="link_btn">Shuffle!</span>
+  <div id="random-posts">
+    <ul class="posts" id="random-posts-list">
+    </ul>
+  </div>
+  {% unless site.random_url %}
+  <script>
+    if(!('entry_list' in window)){
+      entry_list=[
+        {% for post in site.posts %}
+        {% capture p %}{%include post_list.html%}{% endcapture %}
+        "{{p|strip_newlines|replace: '"', '\\"'}}",
+        {% endfor %}
+      ];
+    }
+  </script>
+  {% endunless %}
+{% endif %}
+</section>

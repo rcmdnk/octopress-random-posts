@@ -1,0 +1,13 @@
+---
+layout: null
+---
+{% assign index = true %}
+<div>
+<ul id="posts">
+  {% for post in site.posts %}
+  <li class="post index_click_box">
+    {% include post_list.html%}
+  </li>
+  {% endfor %}
+</ul>
+</div>
