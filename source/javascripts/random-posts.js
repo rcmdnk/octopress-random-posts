@@ -29,7 +29,12 @@ var randomList = function () {
     return false;
   };
 };
-document.getElementById("random-shuffle").onclick = function(){
-  randomList();
+var setRandomList = function () {
+  if (document.getElementById("random-shuffle") != null){
+    randomList();
+    document.getElementById("random-shuffle").onclick = function(){
+      randomList();
+    };
+  }
 };
-document.addEventListener('DOMContentLoaded', randomList);
+document.addEventListener('DOMContentLoaded', setRandomList);
