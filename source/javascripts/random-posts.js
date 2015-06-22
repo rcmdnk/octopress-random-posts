@@ -18,7 +18,7 @@ var randomList = function () {
     var r = Math.floor(Math.random()*nentries);
     if(rand.indexOf(r)!=-1)continue;
     var el = document.createElement("li");
-    el.className = "click_box_link";
+    el.className = "index_click_box";
     el.innerHTML = entry_list[r];
     rp.appendChild(el);
     rand.push(r);
