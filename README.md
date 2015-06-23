@@ -20,7 +20,7 @@ There are three different modes:
 For all modes:
 
 * Copy **source/_includes/custom/asides/random_posts.html** to **source/_includes/custom/asides/**.
-* Copy **source/_includes/post_list.html** to **source/_includes/post_list.html**.
+* Copy **source/_includes/post/post_list.html** to **source/_includes/post/post_list.html**.
 * Copy **sass/plugins/_random-posts.scss** to **sass/plugins/**.
 
 And for each mode:
@@ -95,3 +95,4 @@ And set configuration variables:
         * No additional http connection.
     * Cons:
         * Jekyll build takes a bit time if you have a lot of posts.
+
