@@ -1,6 +1,6 @@
 # octopress-random-posts
 
-A sidebar tool of randome posts list for Octopress (Jekyll).
+A sidebar tool of random posts list for Octopress (Jekyll).
 
 There are three different modes:
 
@@ -85,13 +85,13 @@ And set configuration variables:
         * The list is fixed for each page until new build is sent.
 * Active list with HTML.
     * Pros:
-        * The list is renewed everytime.
-        * The smallet load at jekyll build.
+        * The list is renewed every time.
+        * The smallest load at jekyll build.
     * Cons:
         * Additional http connection is required when the page is opened.
 * Active list with a inline list.
     * Pros:
-        * The list is renewed everytime.
+        * The list is renewed every time.
         * No additional http connection.
     * Cons:
         * Jekyll build takes a bit time if you have a lot of posts.
