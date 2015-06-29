@@ -11,11 +11,11 @@ There are three different modes:
 * Active list with a inline list.
     * Embed an entry list in a page, and shuffle the list by JavaScript.
 
-# Requirement
+## Requirement
 
 * [rcmdnk/jekyll-var-to-js](https://github.com/rcmdnk/jekyll-var-to-js): Not mandatory. It is needed to set a number of posts and a post list URL in **_config.yml**.
 
-# Installation
+## Installation
 
 For all modes:
 
@@ -76,7 +76,7 @@ And set configuration variables:
 * `random_local`: Set if the local build mode is used or not. If false, another mode is used.
 * `random_url`: If `random_url` is set and `random_local` is false, the active list with HTML is used. If `randome_url` is not set and `random_local` is false, the active list with a inline list is used.
 
-# Pros and Cons of each mode
+## Pros and Cons of each mode
 
 * Local build mode.
     * Pros:
