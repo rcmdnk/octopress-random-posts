@@ -1,6 +1,6 @@
 var randomList = function () {
   if(!('entry_list' in window)){
-    console.log('still no entry_list!');
+    //console.log('still no entry_list!');
     return;
   }
   var nentries = entry_list.length;
