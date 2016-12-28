@@ -17,11 +17,11 @@ module Jekyll
         n_posts = 5
       end
 
-      site.posts.each { |post|
-        post.data.merge!("random_posts" => site.posts.shuffle[0,n_posts])
+      site.posts.docs.each { |post|
+        post.data.merge!("random_posts" => site.posts.docs.shuffle[0,n_posts])
       }
       site.pages.each { |page|
-        page.data.merge!("random_posts" => site.posts.shuffle[0,n_posts])
+        page.data.merge!("random_posts" => site.posts.docs.shuffle[0,n_posts])
       }
     end
   end
