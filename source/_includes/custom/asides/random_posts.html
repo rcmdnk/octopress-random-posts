@@ -20,7 +20,7 @@
       entry_list=[
         {% for post in site.posts %}
         {% capture p %}{%include post/post_list.html%}{% endcapture %}
-        "{{p|strip_newlines|replace: '"', '\\"'}}",
+        "{{p| expand_urls: root_url | strip_newlines|replace: '"', '\\"'}}",
         {% endfor %}
       ];
     }
