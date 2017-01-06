@@ -1,17 +1,14 @@
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 <div class="group">
   {% if post.ogimage and post.no_ogimage != true %}
-  ogimage
   <div class="title-small-thumbnail">
     <a href="{{ root_url }}{{ post.url }}">{%thumbnail small-thumbnail val:post.ogimage%}</a>
   </div>
   {% else %}
-  ogimage
   {%capture postimg%}{{ post.content | amazon_img }}{%endcapture%}
   {% if postimg == "" %}
   {% if site.sitelogo %}
   <div class="title-small-thumbnail">
-  n-
     <a href="{{ root_url }}{{ post.url }}">{%thumbnail small-thumbnail val:site.sitelogo%}</a>
   </div>
   {% endif %}
