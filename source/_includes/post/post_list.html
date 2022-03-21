@@ -2,12 +2,12 @@
 <div class="group">
   <div class="title-small-thumbnail">
   {% if post.ogimage and post.no_ogimage != true %}
-    <a href="{{ root_url }}{{ post.url }}">{%thumbnail small-thumbnail val:post.ogimage%}</a>
+    <a href="{{ root_url }}{{ post.url }}">{% thumbnail small-thumbnail val:post.ogimage %}</a>
   {% else %}
-    {%capture postimg%}{{ post.content | amazon_img }}{%endcapture%}
+    {% capture postimg %}{{ post.content | amazon_img }}{% endcapture %}
     {% if postimg == "" %}
       {% if site.sitelogo %}
-        <a href="{{ root_url }}{{ post.url }}">{%thumbnail small-thumbnail val:site.sitelogo%}</a>
+        <a href="{{ root_url }}{{ post.url }}">{% thumbnail small-thumbnail val:site.sitelogo %}</a>
       {% endif %}
     {% else %}
       {{postimg}}

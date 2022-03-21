@@ -4,7 +4,7 @@
   <ul class="posts">
     {% for post in page.random_posts %}
     <li class="post index_click_box">
-      {% include post/post_list.html%}
+      {% include post/post_list.html %}
     </li>
     {% endfor %}
   </ul>
@@ -19,7 +19,7 @@
     if(!('entry_list' in window)){
       entry_list=[
         {% for post in site.posts %}
-        {% capture p %}{%include post/post_list.html%}{% endcapture %}
+        {% capture p %}{% include post/post_list.html %}{% endcapture %}
         "{{p| expand_urls: root_url | strip_newlines|replace: '"', '\\"'}}",
         {% endfor %}
       ];
