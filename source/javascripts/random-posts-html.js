@@ -20,7 +20,7 @@ var randomList = function () {
   $('#random-posts ul').append(f);
   var random_url=$(entry_list[Math.floor(Math.random()*nentries)]).find('.click_box_link')[0].href;
   $('#random-link').wrap($('<a href="Random Fly!"/>'));
-  $('#random-link').click(function(){
+  $('#random-link').on('click', function(){
     window.location=random_url;
     return false;
   });
@@ -40,7 +40,7 @@ $(function(){
       randomList();
     });
   }
-  $('#random-shuffle').click(function(){
+  $('#random-shuffle').on('click', function(){
     randomList();
   });
 });
